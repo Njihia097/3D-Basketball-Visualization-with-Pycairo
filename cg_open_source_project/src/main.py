@@ -41,3 +41,8 @@ draw_center_circle(context, center_x, center_y, 50)
 free_throw_radius = 60
 draw_dashed_free_throw_circle(context, 200, center_y, free_throw_radius)
 draw_dashed_free_throw_circle(context, court_width - 100, center_y, free_throw_radius)
+# Position and draw the basketball
+ball_x = WIDTH - 135
+ball_y = HEIGHT - 130
+ball_radius = 125
+draw_sphere(context, ball_x, ball_y, ball_radius)
