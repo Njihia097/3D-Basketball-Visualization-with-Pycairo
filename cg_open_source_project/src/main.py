@@ -22,3 +22,12 @@ def draw_basketball_court_with_ball():
         draw_half_court_line(context, center_x, 100, court_height)
 
         surface.write_to_png("basketball_court_with_ball.png")
+ #Adding Key Areas and Three-Point Arcs
+ # Draw key areas
+center_y = court_height / 2 + 50
+draw_key_area(context, 100, center_y - 60, 100, 120)
+draw_key_area(context, court_width - 100 , center_y - 60, 100, 120)
+
+# Draw three-point arcs
+draw_three_point_arc(context, 100, center_y, 160, left=True)
+draw_three_point_arc(context, court_width, center_y, 160, left=False)
