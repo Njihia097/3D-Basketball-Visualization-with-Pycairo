@@ -29,3 +29,14 @@ def draw_three_point_arc(context, center_x, center_y, radius, left=True):
     context.arc(center_x, center_y, radius, start_angle, end_angle)
     context.stroke()
 
+def draw_center_circle(context, center_x, center_y, radius):
+    context.set_line_width(5)
+    context.arc(center_x, center_y, radius, 0, 2 * math.pi)
+    context.stroke()
+
+def draw_dashed_free_throw_circle(context, center_x, center_y, radius):
+    context.set_line_width(5)
+    context.set_dash([10, 5])  # Dash pattern: 10 on, 5 off
+    context.arc(center_x, center_y, radius, 0, 2 * math.pi)
+    context.stroke()
+    context.set_dash([])  # Reset dash pattern

@@ -31,3 +31,13 @@ draw_key_area(context, court_width - 100 , center_y - 60, 100, 120)
 # Draw three-point arcs
 draw_three_point_arc(context, 100, center_y, 160, left=True)
 draw_three_point_arc(context, court_width, center_y, 160, left=False)
+
+from court import draw_center_circle, draw_dashed_free_throw_circle
+
+# Center circle
+draw_center_circle(context, center_x, center_y, 50)
+
+# Dashed free-throw circles
+free_throw_radius = 60
+draw_dashed_free_throw_circle(context, 200, center_y, free_throw_radius)
+draw_dashed_free_throw_circle(context, court_width - 100, center_y, free_throw_radius)
