@@ -52,12 +52,11 @@ def draw_basketball_court_with_ball():
 
         # Draw the basketball
         draw_sphere(context, ball_x, ball_y, ball_radius)
-
         draw_texture_lines(context, ball_x, ball_y, ball_radius)
 
         # Save to file
         surface.write_to_png("basketball_court_with_ball.png")
         print("Basketball court with 3D basketball created!")
 
-        if _name_ == "_main_":
-            draw_basketball_court_with_ball()
+if __name__ == "__main__":
+    draw_basketball_court_with_ball()
