@@ -6,7 +6,6 @@ Paint Fight Game is a competitive, two-player game where each player aims to cov
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [How to Play](#how-to-play)
 - [Game Settings](#game-settings)
@@ -24,11 +23,6 @@ Paint Fight Game is a competitive, two-player game where each player aims to cov
 - **Player Movement Delay**: Adjustable player move delay for more dynamic gameplay.
 
 ## Getting Started
-
-### Prerequisites
-
-- **Python 3.8+**
-- **Pygame library**
 
 ### Installation
 
@@ -50,6 +44,8 @@ Paint Fight Game is a competitive, two-player game where each player aims to cov
    ```bash
    python main.py
    ```
+
+   Refer to requirements.txt: cg_open_source_project/src/paint_fight/requirements.txt
 
 ## How to Play
 
