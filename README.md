@@ -45,7 +45,8 @@ Paint Fight Game is a competitive, two-player game where each player aims to cov
    python main.py
    ```
 
-   Refer to [requirements.txt:] (cg_open_source_project/src/paint_fight/requirements.txt)
+  Refer to [requirements.txt](cg_open_source_project/src/paint_fight/requirements.txt)
+
 
 ## How to Play
 
