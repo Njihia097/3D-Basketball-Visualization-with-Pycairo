@@ -2,8 +2,12 @@
 
 Paint Fight Game is an engaging, two-player game where players compete to cover the most area with their paint. Players can strategically paint over each other's colors to increase their score and reduce their opponent's, creating a dynamic and competitive experience. The game features a vibrant gradient background, obstacles, and timed gameplay for added excitement.
 
-![Game Preview](#)  
-<img width="599" alt="preview_image1" src="https://github.com/user-attachments/assets/6ed1a530-9ce7-4a11-b24e-c118425181e7">
+## Game Preview
+
+<div align="center">
+  <img width="599" alt="preview_image1" src="https://github.com/user-attachments/assets/6ed1a530-9ce7-4a11-b24e-c118425181e7">
+</div>
+
 
 ---
 
