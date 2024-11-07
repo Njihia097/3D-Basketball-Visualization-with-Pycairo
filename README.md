@@ -1,6 +1,11 @@
 # Paint Fight Game
 
-Paint Fight Game is a competitive, two-player game where each player aims to cover the most area with their paint color. Players score points by painting areas of the screen; if one player paints over another player’s color, it adds to their score and deducts from the other player’s score. The game features dynamic gradient backgrounds, obstacles, and timed gameplay.
+Paint Fight Game is an engaging, two-player game where players compete to cover the most area with their paint. Players can strategically paint over each other's colors to increase their score and reduce their opponent's, creating a dynamic and competitive experience. The game features a vibrant gradient background, obstacles, and timed gameplay for added excitement.
+
+![Game Preview](#)  
+<img width="599" alt="preview_image1" src="https://github.com/user-attachments/assets/6ed1a530-9ce7-4a11-b24e-c118425181e7">
+
+---
 
 ## Table of Contents
 
@@ -13,66 +18,79 @@ Paint Fight Game is a competitive, two-player game where each player aims to cov
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## Features
 
-- **Two-Player Mode**: Compete against another player in real-time.
-- **Dynamic Gradient Background**: Smooth color transitions with adjustable RGB values for a dynamic and appealing backdrop.
-- **Obstacle Mechanics**: Moving obstacles on the screen that players must avoid.
-- **Score Tracking**: Points system that rewards players for covering area with paint and penalizes players if their paint is covered.
-- **Game Timer**: A timer tracks the game's duration and signals the end.
-- **Player Movement Delay**: Adjustable player move delay for more dynamic gameplay.
+- **Two-Player Mode**: Compete head-to-head with another player.
+- **Dynamic Gradient Background**: Smooth color transitions create an eye-catching and dynamic environment.
+- **Obstacle Mechanics**: Moving obstacles add a level of difficulty to navigate.
+- **Score Tracking**: Gain points for painting new areas; lose points if your paint is covered.
+- **Game Timer**: The game ends when the timer runs out, determining the winner based on points.
+- **Player Movement Delay**: Adjustable settings allow fine-tuning of player speed.
+
+---
 
 ## Getting Started
 
+Follow these steps to install and run the game on your computer.
+
 ### Installation
 
-1. Clone the repository:
-
+1. **Download the Game**  
+   First, download the Paint Fight Game files:
+   
    ```bash
    git clone https://github.com/yourusername/paint-fight-game.git
    cd paint-fight-game
    ```
 
-2. Install dependencies:
-
+2. **Install Required Software**  
+   The game requires Python and the `pygame` library. Install `pygame` by running:
+   
    ```bash
    pip install pygame
    ```
 
-3. Run the game:
-
+3. **Start the Game**  
+   To start the game, use the following command:
+   
    ```bash
    python main.py
    ```
 
-  Refer to [requirements.txt](cg_open_source_project/src/paint_fight/requirements.txt)
+   > **Note**: You can also refer to the [requirements.txt](cg_open_source_project/src/paint_fight/requirements.txt) file for a list of all dependencies.
 
+---
 
 ## How to Play
 
-- **Objective**: Cover the most screen area with your paint color before the game timer ends.
-- **Player Controls**:
-  - **Player 1**: Use `WASD` keys to move.
+- **Objective**: Cover the most area with your color before the timer runs out.
+- **Controls**:
+  - **Player 1**: Use `W`, `A`, `S`, `D` keys to move.
   - **Player 2**: Use `Arrow` keys to move.
 - **Scoring**:
-  - Paint over unpainted areas or areas painted by the other player to score points.
-  - Covering the other player’s color adds to your score and deducts from theirs.
-- **Obstacles**: Avoid obstacles moving on the screen, as they reset your position if hit.
-- **End of Game**: When the timer ends, the player with the most points wins.
+  - Paint over empty areas or your opponent's color to increase your score.
+  - Painting over the opponent’s color deducts points from them and adds to your score.
+- **Obstacles**: Avoid obstacles as they will reset your position if touched.
+- **Game End**: When the timer finishes, the player with the most points wins.
+
+---
 
 ## Game Settings
 
-You can modify game parameters in the code to customize your experience:
+You can adjust game settings in the code to customize the experience to your liking:
 
-- **Player Move Delay**: Adjust `PLAYER_MOVE_DELAY` to control player speed.
-- **Gradient Colors**: Modify `grad_start_color` and `grad_end_color` for different background color effects.
-- **Obstacle Speed and Position**: Set `OBSTACLE_SPEED` and initial `obstacle_pos` for varied gameplay.
+- **Player Speed**: Modify `PLAYER_MOVE_DELAY` to adjust how fast players move.
+- **Background Colors**: Adjust `grad_start_color` and `grad_end_color` to create custom gradient backgrounds.
+- **Obstacle Settings**: Change `OBSTACLE_SPEED` and starting `obstacle_pos` for varied gameplay.
+
+---
 
 ## Project Structure
 
 ```plaintext
 paint-fight-game/
-│
 ├── main.py               # Main game logic and loop
 ├── settings.py           # Game settings (colors, speeds, etc.)
 ├── assets/               # Game assets (images, sounds, etc.)
@@ -80,39 +98,26 @@ paint-fight-game/
 └── requirements.txt      # Dependencies (for pip installation)
 ```
 
+---
+
 ## Contributing
 
-Contributions are welcome! Please open an issue first to discuss your ideas, and then submit a pull request.
+We welcome contributions to improve Paint Fight Game! Here’s how to get started:
 
-### Steps to Contribute
+1. **Fork the Repository**  
+2. **Create a New Branch**:  
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**  
+4. **Commit Changes**  
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+5. **Push Changes**  
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Submit a Pull Request**
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
-
-
-
-# 3D Basketball Visualization with Pycairo
-
-A visually realistic 3D basketball illustration built using Python and the Pycairo graphics library. This project utilizes advanced computer graphics techniques to create depth, texture, and accurate curvature lines for a lifelike basketball design.
-
-## Project Overview
-
-This project demonstrates how to use Bezier curves, gradients, and radial shading to simulate a 3D basketball effect in 2D graphics. With Pycairo, a powerful vector graphics library, this project combines artistry and programming to bring a basketball to life, complete with textured shading and realistic seam curves.
-
-## Features
-
-- **3D Sphere Representation**: Uses radial gradients to give the basketball a realistic 3D appearance.
-- **Basketball Seam Curves**: Bezier curves simulate the characteristic lines on a basketball, including intersecting diagonal and vertical seams.
-- **Texture and Shading**: Applied color gradients and shadows for depth and texture.
-
-## Requirements
-
-- **Python 3.x**
-- **Pycairo Library**
-
-Install Pycairo using pip:
-```bash
-pip install pycairo
+---
